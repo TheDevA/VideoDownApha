@@ -31,7 +31,7 @@ def main():
     id = ""
     duration = ""
     uploader = ""
-    with yt_dlp.YoutubeDL({{"quiet":True}}) as ydl:
+    with yt_dlp.YoutubeDL({"quiet":True}) as ydl:
       info0 = ydl.extract_info(URL, download=False)
       title = info0['title']
       id = info0["id"]
