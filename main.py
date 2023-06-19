@@ -50,7 +50,7 @@ def main():
       "duration": round(duration / 60, 2),
       "formats": formats
     }
-    print(DATA)
+    print(json.dumps(DATA))
 
 
 if __name__ == "__main__":
