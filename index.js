@@ -30,6 +30,7 @@ app.get('/video', (req, res) => {
   };
 
   PythonShell.run('main.py', options).then(messages=>{
+    console.log(messages)
     res.send(messages)
     // results is an array consisting of messages collected during execution
     // console.log(messages)
